@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <script>
-        (function(d) {
-          var config = {
-            kitId: 'bbh1gvk',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        (function (d) {
+            var config = {
+                kitId: 'bbh1gvk',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
-      </script>
+    </script>
 </head>
+
 <body>
     <header>
-        <duv class = "logo">Logo</duv><!--ロゴができたらここに追加する-->
+        <duv class="logo">KotoYama Portfolio</duv><!--#TODO 山のロゴとか可愛いかも-->
         <nav>
             <ul>
-                <li><a href = "#work">WORK</a></li>
-                <li><a href = "profile">PROFILE</a></li>
-                <li><a href = "skill">SKILL</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#skill">SKILL</a></li>
             </ul>
         </nav>
     </header>
-    <section id = "top">
-        <div class = "text">
+    <section id="top">
+        <div class="text">
             <p>I'm</p>
             <p>Kotone Yamagushi</p>
         </div>
-        <div class = "images">
-            <img class = "top-img" src ="./images/myPofile.jpg" alt = "自画像1"/>
-            <img class = "top-img" src = "images/MyP.jpg" alt = "自画像2"/>
+        <img class="top-img" src="./images/top1.JPG" alt="自画像1" />
+        <!--img class = "top-img" src = "images/MyP.jpg" alt = "自画像2"/-->
+    </section>
+    <section id="work">
+        <H2>WORK</H2>
+        <div class=works>
+            <div class="lur">
+                <H3>Lur</H3>
+            </div>
+            <div class="Ella">
+                <H3>Ella Flure</H3>
+            </div>
         </div>
     </section>
-    <section id = "work">
-        <div class = "lur">Lur</div>
-        <dib class = "Ella">Ella Flure</dib>
-    </section>
-    <section id = "profile">
+    <section id="profile">
         <H2>PROFILE</H2>
         <p>文章</p>
     </section>
-    <section id = "skill">
+    <section id="skill">
         <h2>SKILL</h2>
     </section>
 </body>
+
 </html>
