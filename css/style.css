@@ -16,6 +16,10 @@ header {
     /*background-color: coral*/
 }
 
+h2{
+    font-size: xx-large;
+}
+
 .logo{
     font-size: larger;
 }
@@ -57,14 +61,14 @@ section {
 #top p {
     font-size: xx-large;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 19px;
 }
 
 #top images{
     display: flex;
 }
 .top-img {
-    width: 1000px;
+    width: 70%;
     height: auto;
     border: 3px solid #333; /* 画像に枠線を追加 */
 }
@@ -76,6 +80,37 @@ section {
 
 .works {
     display: flex;
-    text-align: center;
-    gap: 50px;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+}
+
+.works-img {
+    border-radius: 15px; /* 画像の角を丸くする */
+    width: 250px;
+    height: auto;
+    border: 3px solid #333;
+}
+
+
+.works-text {
+    margin: 0;
+}
+
+.profile-img {
+    width: 350px;
+    border-radius: 50%;
+    padding: 6%;
+}
+
+.profile {
+    display: flex;
+}
+
+#profile img{
+    display: flex;
+}
+
+#profile h1 {
+    font-size: 300%;
 }
