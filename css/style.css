@@ -1,0 +1,77 @@
+body {
+    font-family: "zen-kaku-gothic-new", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid #000;
+    /*background-color: coral*/
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;/* 子要素間のスペースを40pxに設定 */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    font-size: larger;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 20px;
+    gap: 100px;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;/* 子要素を均等に配置 */
+    align-items: center;
+    border-bottom: 3px solid #000;
+    margin: 0;
+}
+
+#top .text {
+    display: flex;
+    flex-direction: column; /* 文章を縦に並べる */
+}
+
+#top p {
+    font-size: xx-large;
+    margin: 0;
+}
+
+#top images{
+    display: flex;
+}
+.top-img {
+    width: 400px;
+    height: auto;
+    border: 3px solid #333; /* 画像に枠線を追加 */
+}
+
+
+#work,#profile,#skill {
+    margin-bottom: 40px;
+}
+
+.work-item, skill {
+    background-color: coral;
+    padding: 10px;
+    margin: 10px 0;
+}
