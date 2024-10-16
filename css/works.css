@@ -1,0 +1,289 @@
+body {
+    font-family: "zen-kaku-gothic-new", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    border-bottom: 3px solid #000;
+    background-color: white; /* ヘッダーを白にしてページを引き締める */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ヘッダーに軽い影を追加 */
+}
+
+.logo {
+    font-size: larger;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    font-size: larger;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347; /* ホバー時にオレンジ色に変わる */
+}
+
+h2 {
+    font-size: xx-large;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 40px 20px;
+    gap: 100px;
+    background-color: white; /* セクションごとに背景を白にしてコンテンツを浮き立たせる */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* 軽い影を追加して立体感を出す */
+    margin-bottom: 20px; /* 各セクション間に余白を追加 */
+}
+
+#top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 3px solid #000;
+}
+
+#top .text {
+    display: flex;
+    flex-direction: column;
+}
+
+#top p {
+    font-size: xx-large;
+    margin: 0;
+    margin-left: 19px;
+}
+
+.top-img {
+    width: 90%;
+    height: auto;
+    justify-content: flex-start;
+    max-width: 700px;
+    border-radius: 10px; /* 画像の角を少し丸めて柔らかい印象に */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 画像に軽い影を追加 */
+}
+
+#work, #profile, #skill {
+    margin-bottom: 40px;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.works-img {
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+    border: 3px solid #333;
+    transition: transform 0.3s ease; /* 画像がホバーされたときの変化を追加 */
+}
+
+.works a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s ease;
+}
+
+.works a:hover .works-img {
+    transform: scale(1.05); /* ホバー時に画像を少し拡大する */
+}
+
+.works a:hover {
+    opacity: 0.7; /* ホバー時に少し透明に */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* プロフィール画像にも影を追加 */
+}
+
+.profile-text h1 {
+    font-size: 4.5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.profile-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile-description {
+    margin-top: 100px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills-list, .certifications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 45%;
+}
+
+.skills-list li, .certifications-list li {
+    margin-bottom: 10px;
+    background-color: #fafafa; /* 各スキル項目に背景色を追加 */
+    padding: 10px;
+    border-radius: 5px; /* スキル項目に角丸を追加 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 軽い影を追加 */
+    transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover, .certifications-list li:hover {
+    background-color: #ff6347; /* ホバー時に背景をオレンジに変える */
+    color: white;
+}
+
+/* アイデアシートの画像調整 */
+.ideasheet-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* アイデアシート画像に影を追加 */
+}
+
+/* Worksセクションの画像調整 */
+.works-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 中間発表ポスターの画像にも影を追加 */
+}
+
+.work-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.work-details p, .work-details ol, .work-details ul {
+    margin-bottom: 15px;
+}
+
+.work-details strong {
+    font-weight: bold;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+    .profile-description {
+        margin-top: 60px;
+        margin-left: calc(400px);
+        max-width: calc(100% - 450px);
+    }
+}
+
+@media (max-width: 768px) {
+    #top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-img {
+        width: 90%;
+        max-width: none;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    .profile-description {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+
+    .works {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .works-img {
+        width: 80%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-list, .certifications-list {
+        width: 100%;
+    }
+
+    .ideasheet-image, .works-image {
+        width: 90%;
+    }
+}

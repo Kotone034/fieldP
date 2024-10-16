@@ -26,7 +26,7 @@ h2 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px; /* 子要素間のスペースを40pxに設定 */
+    gap: 40px;
     padding: 0;
     margin: 0;
 }
@@ -40,6 +40,10 @@ nav a {
     color: black;
 }
 
+nav a:hover {
+    color: #ff6347; /* ホバー時にオレンジ色に変わる */
+}
+
 section {
     padding: 20px;
     gap: 100px;
@@ -48,14 +52,14 @@ section {
 
 #top {
     display: flex;
-    justify-content: flex-start; /* 子要素を左揃え */
+    justify-content: flex-start;
     align-items: center;
     border-bottom: 3px solid #000;
 }
 
 #top .text {
     display: flex;
-    flex-direction: column; /* 文章を縦に並べる */
+    flex-direction: column;
 }
 
 #top p {
@@ -67,15 +71,13 @@ section {
 .top-img {
     width: 70%;
     height: auto;
-    border: 3px solid #333; /* 画像に枠線を追加 */
-    max-width: 900px; /* 最大幅を設定 */
+    border: 3px solid #333;
 }
 
 #work, #profile, #skill {
     margin-bottom: 40px;
 }
 
-/* WORKセクションのスタイル */
 .works {
     display: flex;
     justify-content: center;
@@ -91,89 +93,109 @@ section {
     border: 3px solid #333;
 }
 
-/* プロフィールセクションのスタイル */
+.works a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: inherit; /* 文字の色を親要素から継承 */
+    transition: opacity 0.3s ease;
+}
+
+.works a:hover {
+    opacity: 0.7; /* ホバー時に少し透明にする */
+}
+
 .profile {
     display: flex;
     align-items: center;
-    justify-content: center; /* 全体を中央揃えにする */
-    gap: 10px; /* 画像とテキストの間に余白を追加 */
+    justify-content: center;
+    gap: 10px;
 }
 
 .profile-img {
-    width: 350px; /* 画像の幅を大きく変更 */
+    width: 350px;
     height: 350px;
-    border-radius: 50%; /* 丸い形にする */
+    border-radius: 50%;
     border: 3px solid #333;
 }
 
 .profile-text h1 {
-    font-size: 4.5rem; /* 名前のフォントサイズを調整 */
-    margin: 0; /* 不要なマージンをなくす */
-    text-align: center; /* 名前を中央揃え */
+    font-size: 4.5rem;
+    margin: 0;
+    text-align: center;
 }
 
 .profile-text p {
     font-size: 1.2rem;
     margin-top: 10px;
-    text-align: center; /* 自己紹介文も中央に揃える */
+    text-align: center;
 }
 
 .profile-description {
-    margin-top: 100px; /* プロフィールと文章の間に余白を追加 */
-    font-size: 1.1rem; /* テキストサイズを少し小さく調整 */
-    line-height: 1.6; /* 読みやすさのために行間を設定 */
-    text-align: justify; /* テキストを均等配置 */
-    color: #333; /* テキストの色を少し柔らかい黒に設定 */
+    margin-top: 40px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (min-width: 768px) {
-    .profile-description {
-        margin-top: 60px; /* より下に下げる */
-        margin-left: calc(400px); /* 画像の右端を基準に文書を寄せる */
-        max-width: calc(100% - 450px); /* 文書の右端が「ネットワーク情報学科」の右側に沿うようにする */
-    }
+#skill ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* 画面サイズが768px以下になった場合に縦並びに変更 */
+#skill ul li {
+    flex: 1 1 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
 @media (max-width: 768px) {
     #top {
-        flex-direction: column; /* 縦に並べる */
-        align-items: center; /* 縦並び時に中央に揃える */
+        flex-direction: column;
+        align-items: center;
     }
 
     .top-img {
-        width: 90%; /* 小さい画面では画像をより大きく表示 */
-        max-width: none; /* 最大幅の制限を解除 */
+        width: 90%;
+        max-width: none;
     }
 
     .profile {
-        flex-direction: column; /* 縦に並ぶように変更 */
+        flex-direction: column;
         align-items: center;
     }
 
     .profile-img {
-        width: 300px; /* モバイル時の画像幅 */
-        height: auto; /* 縦横比を保つため高さは自動 */
+        width: 300px;
+        height: auto;
     }
 
     .profile-text {
-        text-align: center; /* モバイル時もテキストを中央に揃える */
+        text-align: center;
     }
 
     .profile-description {
-        margin-top: 20px;
-        margin-left: auto; /* モバイル時は中央揃え */
+        margin-left: auto;
         margin-right: auto;
-        max-width: 90%; /* モバイル時は幅を広げる */
+        max-width: 90%;
     }
 
     .works {
-        flex-direction: column; /* 縦に並べる */
-        align-items: center; /* 縦並び時に中央に揃える */
-        gap: 20px; /* 縦並び時の画像間の余白を増やす */
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     .works-img {
-        width: 80%; /* 小さい画面では画像をより大きく表示 */
+        width: 80%;
     }
 }
