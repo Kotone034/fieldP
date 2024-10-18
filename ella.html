@@ -6,6 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella Flure - figmaを用いたWebAR体験</title>
     <link rel="stylesheet" href="css/works.css">
+    <style>
+        /* Figma埋め込みをレスポンシブ対応にするためのスタイル */
+        .prototype iframe {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9のアスペクト比を維持する */
+            position: relative;
+        }
+
+        .prototype iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 小さい画面での最適化 */
+        @media (max-width: 768px) {
+            .prototype iframe {
+                height: auto;
+                padding-bottom: 56.25%; /* 画面サイズに応じて高さを調整 */
+            }
+        }
+
+        /* 共通のレイアウトスタイル */
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .logo-section img {
+            max-width: 200px;
+            border-radius: 5px;
+        }
+
+        .logo-description {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -22,67 +66,102 @@
         <div class="text">
             <h1>Ella Flure - figmaを用いたWebAR体験</h1>
         </div>
-        <!--img class="top-img" src="./images/Lur/中間発表ポスター.png" alt="Lurのイメージ画像" /-->
     </section>
 
     <section id="works">
-        <h2>前期の活動</h2>
+        <h2>夏休みの活動</h2>
         <div class="ideasheet">
             <h3>発想</h3>
             <p>
-                私はアイデアを考えるときに、まず自分が一番興味があるものは何だろうと考えました。そのときに「花」をテーマに選びました。</br>
-                花は人にあげるプレゼントとして使われますが、あげる花の「花言葉」を知らずにあげる人も多いのではないかと考えました。花言葉はとても奥深いものです。
-                色や本数によって変わる花言葉を通じて、もっと多くの人に花の魅力を知ってもらいたいと思い、このアイデアを思いつきました。
+                中間発表から少し時間が経ち、振り返ってみると何か違うなと感じてしまったのがきっかけです。<br>
+                花というテーマからは離れずに、新しいアイデアを模索する中で、ビジネスプランとしてWebARを使ったアイデアが浮かびました。<br>
+                Copilotにアイデアを出してもらったことで、自分では思いつかなかったWebARの可能性に気づきました。コードを書く経験はなかったものの、スキル向上につながると思い、挑戦してみました。
             </p>
-            <img src="./images/Lur/ideasheet.jpg" alt="Idea Sheet" class="ideasheet-image">
+            <img src="./images/EllaFlure/webAR.jpg" alt="Idea Sheet" class="ideasheet-image">
         </div>
 
-        <h3>自己表現というワード</h3>
+        <h3>WebARとは</h3>
         <p>
-            「花をあげる」と聞くと、他の人にあげることを想像する人が多いかもしれません。しかし、今回のテーマは違います。
-            花束を通して「自己表現」するという新しい方法に焦点を当てています。花言葉を通して自己を表現するというのは、SNS時代にマッチした新しい自己表現方法だと考えています。
+            「WebAR」という技術をご存じでしょうか。<br>
+            私が作成したものは、QRコードを読み込むと3Dモデルが表示される仕組みです。AR技術はすでに多くの場面で利用されていますが、自分で作れるということが意外と知られていないかもしれません。<br>
+            調べた結果、自分でも挑戦できるとわかり、実際に制作してみました。
         </p>
 
         <div class="works-content">
-            <h2>花で表す個性の表現</h2>
-            <h3>ー CAFE Lur ー</h3>
+            <h2>figmaを用いたWebAR体験 - Ella Flure</h2>
+            <h3>ー ARで部屋に花を飾る体験 ー</h3>
             <p>
-                フィールド演習のテーマである「人間ではない者たち」。このテーマに対して、私は「花」を使った自己表現を提案しました。
-                いま「個性」を大切にする社会の中で、SNSを使えば顔の知らない相手とも繋がれます。自己表現はどのように行われているのでしょうか？
-                私は「花」を通じて新しい自己表現の方法を提案します。
+                自分の部屋に花を飾りたいと思ったことはありませんか？<br>
+                花を買う際、「部屋のレイアウトに合うかな」「買ってみて、イメージと違ったらどうしよう」と思うことがありますよね。<br>
+                そんな悩みを解消するために、ARを通じて実際に花を飾る体験を提供します。Ella Flureは、ARを使って部屋に花を表示し、購入前にその花がどのように見えるかを確認できるサービスです。
             </p>
 
             <div class="work-details">
                 <p><strong>目的</strong></br>
-                    Lurは「個性の表現」をテーマに、花束を通じて自己表現を促すことを目的としています。
+                    Ella Flureは、AR技術を活用して花を使った新しい自己表現や空間デザインをサポートすることを目指しています。
                 </p>
 
                 <p><strong>ターゲット</strong></br>
-                    SNSを利用している若者をターゲットとしています。
+                    インテリアや空間デザインに興味のある人々、特に若い世代のSNSユーザーをターゲットにしています。
                 </p>
 
-                <p><strong>場所</strong></br>
-                    セルフ写真館、チームラボのスペースを活用予定です。
+                <p><strong>技術</strong></br>
+                    Figmaを用いてWebARプロトタイプを設計し、ユーザーがQRコードをスキャンしてAR体験をできるようにしています。
                 </p>
 
                 <p><strong>方法</strong>
                 <ol>
-                    <li>メインとなる花を選びます。</li>
-                    <li>その花を基にして、他の花と組み合わせて花束を作ります。</li>
-                    <li>最後に、完成した花束で写真撮影を行います。</li>
+                    <li>ユーザーがQRコードをスキャンします。</li>
+                    <li>3DモデルがWebARで表示され、実際の部屋に花を置いたかのように確認できます。</li>
+                    <li>部屋のレイアウトに合わせた花を選ぶことができ、最終的に購入を検討できます。</li>
                 </ol>
                 </p>
 
                 <p><strong>期待される効果</strong>
                 <ul>
-                    <li>SNSでの自己表現の一環として、Lurを通じて拡散されることを期待しています。</li>
-                    <li>「誰かがやれば皆がやる」というトレンドを活用し、さらなる広がりを狙います。</li>
+                    <li>ARを活用した新しい購買体験を提供することで、オンラインショッピングの不安を解消します。</li>
+                    <li>SNSでのシェアや口コミを通じて、新しい自己表現方法が広がることを期待しています。</li>
                 </ul>
                 </p>
             </div>
         </div>
 
-        <img src="./images/Lur/中間発表ポスター.png" alt="中間発表ポスター" class="works-image">
+        <!-- プロトタイプ埋め込み -->
+        <div class="prototype">
+            <h3>Figma プロトタイプ</h3>
+            <p>
+                最大化して実際に体験して見てください。<br>
+                途中web上でカメラが起動します。カメラの許可をお願いします。
+            </p>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe style="border: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://embed.figma.com/proto/TkRW0PH895YLA1o1MiRYPR/EllaFlure?page-id=0%3A1&node-id=1-7&node-type=canvas&viewport=395%2C162%2C0.21&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A8&share=1&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- UI/UXについてのセクション -->
+        <h3>UI/UXについて</h3>
+        <div class="logo-section">
+            <img src="./images/EllaFlure/UI.png" alt="UIデザインの説明" />
+            <div class="logo-description">
+                <p>
+                    ユーザーが直感的に操作できるように、シンプルなデザインを心がけました。<br>
+                    また、機能を最小限にすることで、WebAR体験というところに注目が行くように考えました。
+                </p>
+            </div>
+        </div>
+
+        <!-- ロゴについてのセクション -->
+        <h3>ロゴについて</h3>
+        <div class="logo-section">
+            <img src="./images/EllaFlure/EllaFlure_logo.png" alt="EllaFlure ロゴ" />
+            <div class="logo-description">
+                <p>
+                    シンプルで見やすいものにすることでぱっと見で文字を認識できるようにしました。<br>
+                    今後、SNSでのマーケティングを意識した時に名前を覚えてもらえるようにしています。
+                </p>
+            </div>
+        </div>
+
     </section>
 </body>
 

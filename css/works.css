@@ -13,8 +13,8 @@ header {
     align-items: center;
     padding: 40px 20px;
     border-bottom: 3px solid #000;
-    background-color: white; /* ヘッダーを白にしてページを引き締める */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ヘッダーに軽い影を追加 */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff6347; /* ホバー時にオレンジ色に変わる */
+    color: #ff6347;
 }
 
 h2 {
@@ -54,9 +54,9 @@ h2 {
 section {
     padding: 40px 20px;
     gap: 100px;
-    background-color: white; /* セクションごとに背景を白にしてコンテンツを浮き立たせる */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* 軽い影を追加して立体感を出す */
-    margin-bottom: 20px; /* 各セクション間に余白を追加 */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
 }
 
 #top {
@@ -82,8 +82,8 @@ section {
     height: auto;
     justify-content: flex-start;
     max-width: 700px;
-    border-radius: 10px; /* 画像の角を少し丸めて柔らかい印象に */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 画像に軽い影を追加 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #work, #profile, #skill {
@@ -103,7 +103,7 @@ section {
     width: 250px;
     height: auto;
     border: 3px solid #333;
-    transition: transform 0.3s ease; /* 画像がホバーされたときの変化を追加 */
+    transition: transform 0.3s ease;
 }
 
 .works a {
@@ -113,11 +113,11 @@ section {
 }
 
 .works a:hover .works-img {
-    transform: scale(1.05); /* ホバー時に画像を少し拡大する */
+    transform: scale(1.05);
 }
 
 .works a:hover {
-    opacity: 0.7; /* ホバー時に少し透明に */
+    opacity: 0.7;
 }
 
 .profile {
@@ -132,7 +132,7 @@ section {
     height: 350px;
     border-radius: 50%;
     border: 3px solid #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* プロフィール画像にも影を追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-text h1 {
@@ -170,36 +170,34 @@ section {
 
 .skills-list li, .certifications-list li {
     margin-bottom: 10px;
-    background-color: #fafafa; /* 各スキル項目に背景色を追加 */
+    background-color: #fafafa;
     padding: 10px;
-    border-radius: 5px; /* スキル項目に角丸を追加 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 軽い影を追加 */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: background-color 0.3s ease;
 }
 
 .skills-list li:hover, .certifications-list li:hover {
-    background-color: #ff6347; /* ホバー時に背景をオレンジに変える */
+    background-color: #ff6347;
     color: white;
 }
 
-/* アイデアシートの画像調整 */
 .ideasheet-image {
     width: 50%;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* アイデアシート画像に影を追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Worksセクションの画像調整 */
 .works-image {
     width: 80%;
     height: auto;
     display: block;
     margin: 20px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 中間発表ポスターの画像にも影を追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .work-details {
@@ -215,6 +213,13 @@ section {
 
 .work-details strong {
     font-weight: bold;
+}
+
+.logo-section img {
+    border: 3px solid #333;
+    /*padding: 10px;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 ol {
