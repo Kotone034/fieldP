@@ -198,6 +198,19 @@ section {
     margin-top: 40px;
 }
 
+.presentation-photo {
+    margin-bottom: 20px; /* 写真と見出しの間に余白を追加 */
+}
+
+.presentation-photo img {
+    max-width: 80%; /* 写真を画面幅に応じて調整 */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* 写真を中央揃え */
+    border: 2px solid #000; /* 黒い枠線を追加 */
+    border-radius: 8px; /* 枠の角を少し丸める */
+}
+
 .feedback-section {
     display: flex;
     justify-content: space-between;
@@ -229,6 +242,19 @@ section {
     margin-bottom: 10px;
     line-height: 1.6;
     color: #555;
+}
+.presentation-photo img {
+    max-width: 50%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    border: 4px dashed #000; /* 枠線を点線に変更 */
+    border-radius: 15px; /* 角丸を大きめに設定 */
+    transition: transform 0.3s ease; /* ホバー時に変化させる */
+}
+
+.presentation-photo img:hover {
+    transform: scale(1.05); /* ホバー時に少し拡大 */
 }
 
 .works-image {
@@ -369,5 +395,9 @@ ul {
     .feedback-item {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .presentation-photo img {
+        max-width: 100%; /* モバイルでは幅を100%に広げる */
     }
 }
