@@ -191,6 +191,46 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#feedback {
+    padding: 40px 20px;
+    background-color: #ffffff; /* 背景を白に設定 */
+    text-align: center;
+    margin-top: 40px;
+}
+
+.feedback-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feedback-item {
+    flex: 1;
+    background-color: #ffffff; /* 各フィードバックの背景を白に設定 */
+    padding: 20px;
+    border: 4px solid #000; /* 枠線を黒に設定 */
+    border-radius: 8px; /* 枠の角を少し丸める */
+    text-align: left;
+}
+
+.feedback-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feedback-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.feedback-item ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+}
+
 .works-image {
     width: 80%;
     height: auto;
@@ -319,5 +359,15 @@ ul {
 
     .ideasheet-image, .works-image {
         width: 90%;
+    }
+
+    .feedback-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-item {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
